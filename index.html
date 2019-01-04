@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Panda Battle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>  
+<body>
+    <div class="container">
+
+    
+        <h1>Panda Battle!</h1>
+        <h2 class="user-prompt">Select your character:</h2>
+
+        <!-- <div class="character" id="mina">
+            <div class="character-name">""</div>
+            <img  class="character-image mina" src="assets/images/girl.jpeg">
+            <div class="character-health">120</div>
+        </div>
+
+        <div class="character" id="aden">
+            <div class="character-name">Aden</div>
+            <img class="character-image aden" src="assets/images/music_panda.jpg">
+            <div class="character-health">110</div>
+        </div>
+
+        <div class="character" id="neda">
+            <div class="character-name">Neda</div>
+            <img class="character-image neda" src="assets/images/bamboo_panda.jpg">
+            <div class="character-health">130</div>
+        </div>
+
+        <div class="character" id="steven">
+            <div class="character-name">Steven</div>
+            <img class="character-image steven" src="assets/images/panda_rice.png">
+            <div class="character-health">140</div>
+        </div>
+
+        <div class="character" id="chalmey">
+            <div class="character-name">Chalmey</div>
+            <img class="character-image chalmey" src="assets/images/baby_panda.jpg">
+            <div class="character-health">140</div>
+        </div> -->
+        
+    </div>
+
+    
+
+    <div class="yourCharacter wrapper">
+        <h2>Your Character: </h2>
+        <!-- <div class="character mina-active">
+        <img  class="mina" src="assets/images/girl.jpeg">
+        </div>
+
+        <div class="character aden-active">
+        <img class="aden" src="assets/images/music_panda.jpg">
+        </div>
+
+        <div class="character neda-active">
+        <img class="neda" src="assets/images/bamboo_panda.jpg">
+        </div>
+
+        <div class="character steven-active">
+        <img class="steven" src="assets/images/panda_rice.png">
+        </div>
+
+        <div class="character chalmey-active">
+        <img class="chalmey" src="assets/images/baby_panda.jpg">
+        </div> -->
+
+    </div>
+    <div class="yourEnemies wrapper">
+        <h2>Your Enemies: </h2>
+
+        <!-- <div class="character mina-enemy">
+        <img  class="mina" src="assets/images/girl.jpeg">
+        </div>
+
+        <div class="character aden-enemy">
+        <img class="aden" src="assets/images/music_panda.jpg">
+        </div>
+
+        <div class="character neda-enemy">
+        <img class="neda" src="assets/images/bamboo_panda.jpg">
+        </div>
+
+        <div class="character steven-enemy">
+        <img class="steven" src="assets/images/panda_rice.png">
+        </div>
+
+        <div class="character chalmey-enemy">
+        <img class="chalmey" src="assets/images/baby_panda.jpg">
+        </div> -->
+    </div>
+    
+
+    <!-- Overall Bootstrap Grid -->
+  <!-- <div class="container"> -->
+
+        <!-- Jumbotron with Title -->
+        <!-- <div class="jumbotron">
+          <h1 class="text-center">
+            <strong>PANDA BATTLE</strong>
+          </h1>
+        </div>
+        
+          
+    
+        
+        <div class="row" id="players">
+    
+            <div class="col-md-2">
+                <div class="card character" id="mina" style="width: 10rem;">
+                        <img class="card-img-top" src="assets/images/ girl.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Panda Mina</h5>
+                          <p class="card-text">Attack Power: 8<br>
+                                                Counter Attack:10</p>
+                          
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card" id="aden" style="width: 10rem;">
+                    <img class="card-img-top" src="assets/images/music_panda.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Panda Aden</h5>
+                            <p class="card-text">Attack Power: 8<br>
+                                                    Counter Attack:10</p>
+                              
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                    <div class="card" id="neda" style="width: 10rem;">
+                        <img class="card-img-top" src="assets/images/bamboo_panda.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Panda Neda</h5>
+                                <p class="card-text">Attack Power: 8<br>
+                                                        Counter Attack:10</p>
+                                  
+                            </div>
+                    </div>
+            </div>
+
+            <div class="col-md-2">
+                    <div class="card" id="steven" style="width: 10rem;">
+                        <img class="card-img-top" src="assets/images/panda_rice.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Panda Steven</h5>
+                                <p class="card-text">Attack Power: 8<br>
+                                                        Counter Attack:10</p>
+                                  
+                            </div>
+                    </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card" id="chalmey" style="width: 10rem;">
+                        <img class="card-img-top" src="assets/images/baby_panda.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Panda Chalmey</h5>
+                          <p class="card-text">Attack Power: 8<br>
+                                                Counter Attack:10</p>
+                          
+                        </div>
+                </div>
+            </div>
+        
+        </div>   
+        
+        <div class="row visible" id="yourPlayer">
+            <h2>Your Character</h2>
+
+        </div>
+        
+        <div class="row visible" id="emenies">
+            <h2>Your Enemies</h2>
+
+        </div>
+        
+    
+    </div>
+           -->
+          <!-- Right Card (Captain Planet Hero)
+          <div class="col-lg-6">
+    
+            Captain Planet Image
+            <img src= alt="" class="img captain-planet" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
+          </div>
+        </div>
+      </div>
+     --> 
+    <script src="assets/javascript/game.js"></script>
+ 
+</body>
+</html>

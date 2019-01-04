@@ -1,0 +1,57 @@
+
+
+/* html { 
+    
+    background: url("../images/bamboo.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+} */
+
+body{
+    background-image: url("../images/bamboo.jpeg");
+    background-size: cover;
+    margin: 0;
+    color: aqua;
+}
+
+.character{
+    background-color: white;
+    display: inline-block;
+    border: solid 3px black;
+    text-align: center;
+    color: black;
+    margin: 5px;
+
+
+}
+
+#players{
+    justify-content: center;
+}
+ img{
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  /* border-radius: 3px solid black; */
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  
+}
+.wrapper{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 35px;
+    
+}
+.selected{
+    border: 5px solid red;
+}
+.enemy{
+    border: 10px solid greenyellow;
+}
+    
